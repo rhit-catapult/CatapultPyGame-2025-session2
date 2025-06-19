@@ -12,6 +12,8 @@ def main():
     # initialize the pygame module
     pygame.init()
 
+    # a change
+    
     # prepare the window (screen)
     screen = pygame.display.set_mode((IMAGE_SIZE, IMAGE_SIZE + TEXT_HEIGHT))
     pygame.display.set_caption("Text, Sound, and an Image")
