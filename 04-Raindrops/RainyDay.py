@@ -39,7 +39,7 @@ class Raindrop:
 class Hero:
     def __init__(self, screen, x, y, with_umbrella_filename, without_umbrella_filename):
         """ Creates a Hero sprite (Mike) that does not move. If hit by rain he'll put up his umbrella. """
-        # TODO 16: Initialize this Hero, as follows:
+        # DONE 16: Initialize this Hero, as follows:
         #     - Store the screen.
         #     - Set the initial position of this Hero to x and y.
         #     - Create an image of this Hero WITH    an umbrella to the given with_umbrella_filename.
@@ -68,7 +68,7 @@ class Hero:
 
     def hit_by(self, raindrop):
         """ Returns true if the given raindrop is hitting this Hero, otherwise false. """
-        # TODO 19: Return True if this Hero is currently colliding with the given Raindrop.
+        # DONE 19: Return True if this Hero is currently colliding with the given Raindrop.
         hero_hit_box = pygame.Rect(self.x, self.y,
                                    self.image_without_umbrella.get_width(),
                                    self.image_without_umbrella.get_height())
@@ -115,7 +115,7 @@ def main():
 
     # DONE 15: Make a Hero, named mike, with appropriate images, starting at position x=200 y=400.
     mike = Hero(screen, 200, 400, "Mike_umbrella.png", "Mike.png")
-    # TODO 15: Make a Hero, named alyssa, with appropriate images, starting at position x=700 y=400.
+    # PASS 15: Make a Hero, named alyssa, with appropriate images, starting at position x=700 y=400.
     # TODO 23: Make a Cloud, named cloud, with appropriate images, starting at position x=300 y=50.
 
     # DONE 3: Enter the game loop, with a clock tick of 60 (or so) at each iteration.
